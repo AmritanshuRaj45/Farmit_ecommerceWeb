@@ -38,4 +38,8 @@ FarmIT is a simple frontend project for an organic product company. It showcases
 ![image](https://github.com/user-attachments/assets/b35afb93-2773-4241-b55d-f0413284b25a)
 ### Footer
 ![image](https://github.com/user-attachments/assets/988be351-21e3-46f5-a127-2b23206a47e2)
+### Responsive
+![image](https://github.com/user-attachments/assets/3a5f4a07-a335-4c67-b9e7-f6ab3c0fbe17)
+![image](https://github.com/user-attachments/assets/0a3b1127-e74d-412a-be44-deda3a2a7d55)
+![image](https://github.com/user-attachments/assets/93e431f3-590a-4000-b1de-abed69a26686)
 
