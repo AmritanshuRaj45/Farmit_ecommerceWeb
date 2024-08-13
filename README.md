@@ -29,3 +29,13 @@ FarmIT is a simple frontend project for an organic product company. It showcases
 ### External Resources
 - **[Google Fonts](https://fonts.google.com/)**: The website uses Google Fonts for custom typography.
 - **CDN**: Content Delivery Networks are utilized for faster loading of Bootstrap, jQuery, and Font Awesome.
+## Demo Screenshots
+### Home page
+![image](https://github.com/user-attachments/assets/f155dcd2-26ef-49c2-9065-68b9e4cf9637)
+### Cart page
+![image](https://github.com/user-attachments/assets/dc256e8c-d0ba-4fbe-965e-b2af4219c1f4)
+### Checkout page
+![image](https://github.com/user-attachments/assets/b35afb93-2773-4241-b55d-f0413284b25a)
+### Footer
+![image](https://github.com/user-attachments/assets/988be351-21e3-46f5-a127-2b23206a47e2)
+
