@@ -1,0 +1,181 @@
+
+   
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background: url('../images/banner-slide/top-banner.jpg') no-repeat center center fixed;
+    background-size: cover; /* Optional: makes the background cover the entire page */
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+/* Banner Section */
+.banner {
+   
+    background: url('../images/header-bg.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    
+    
+    position: absolute;
+               width: 100%;
+               top: 2rem;
+               left: 0;
+               z-index: 2;
+    
+}
+/* Banner Text */
+.banner-content {
+    margin-left: 370px;
+    text-align: center;
+    color: rgb(9, 183, 38);
+    font-size: 15px;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Adds shadow for better readability */
+}
+
+
+/* Container for centering the login card */
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+/* Styling the login card */
+.login-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    width: 300px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover effect to add interactivity */
+.login-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Title of the login form */
+.login-card h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+}
+
+/* Input fields styling */
+input[type="text"], input[type="password"], select {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* Styling the submit button */
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Button hover effect */
+button:hover {
+    background-color: #45a049;
+}
+
+/* Error message styling */
+#errorMessage {
+    color: red;
+    margin-top: 10px;
+}
+
+/* Link styling for registration */
+p a {
+    color: #4CAF50;
+    text-decoration: none;
+}
+
+p a:hover {
+    text-decoration: underline;
+}
+/* Container for centering the login card */
+.registration-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    margin-top: 200px;
+}
+
+#role-drop.hide {
+    display: none;
+}
+
+/* Input fields styling */
+input[type="text"], input[type="password"], input[type="email"], input[type="tel"], select {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #dddddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+/* Styling the registration card */
+.registration-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    width: 300px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover effect to add interactivity */
+.registration-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Title of the registration form */
+.registration-card h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+}
+
+.main-btn {
+    position: relative;
+    color: var(--bg-white);
+    background: linear-gradient(to right, #0f7404, #5cb917);
+    z-index: 1;
+    overflow: hidden;
+    border: 0.2rem solid var(--bg-white);
+    border-radius: 3.5rem;
+    padding: 1rem 3.5rem;
+    font-weight: 600;
+    font-size: 1.8rem;
+    margin-top: 1.5rem;
+    letter-spacing: 0.2rem;
+}
+
+.main-btn:hover {
+    background: var(--bg-white);
+    color: var(--secondary-color);
+    border: 0.2rem solid var(--secondary-color);
+}

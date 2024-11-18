@@ -1,0 +1,245 @@
+.feedback-table-section h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: bold;
+    color: #4CAF50; /* Adjust to match your theme */
+}
+
+.feedback-table {
+    border-radius: 10px;
+    overflow: hidden;
+    border: 1px solid #dee2e6;
+    box-shadow: 0px 4px 8px rgb(0, 0, 0);
+  
+}
+
+.feedback-table thead th{
+    background-color: #4CAF50; /* Table header color */
+
+    color: #ffffff;
+    position: sticky;
+    z-index: 1;
+    top:0;
+}
+
+.feedback-table th, .feedback-table td {
+    vertical-align: middle;
+    text-align: center;
+    padding: 16px; /* Increased padding for bigger cells */
+    font-size: 16px; /* Larger font size for better readability */
+    font-family: 'Arial', sans-serif; /* Clean font for data */
+    border: 1px solid #dee2e6; /* Light border for better separation */
+}
+
+
+
+
+.feedback-table tbody tr:hover {
+    background-color: #4CAF50; /* Hover background color */
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+
+
+/* Make the table scrollable on smaller screens */
+.table-responsive {
+    margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+    .feedback-table th, .feedback-table td {
+        font-size: 14px;
+        padding: 8px;
+    }
+}
+
+.subscription-section h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: bold;
+    color: #4CAF50;
+}
+
+.subscription-cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.subscription-card {
+    width: 300px;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(2, 255, 91, 0.575);
+    background-color: #fff;
+    text-align: center;
+    border: 1px solid #00ff11c3;
+}
+
+.subscription-card h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.subscription-card p {
+    font-size: 14px;
+    color: #666;
+    margin: 5px 0;
+}
+
+.subscription-card .email {
+    font-weight: bold;
+    color: #4CAF50;
+}
+
+.subscription-card .subscribed-at {
+    font-style: italic;
+    color: #999;
+}
+
+@media (max-width: 768px) {
+    .subscription-card {
+        width: 100%;
+    }
+}
+
+.customer-table-section h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: bold;
+    color: #4CAF50; /* Adjust to match your theme */
+}
+
+.customer-table {
+    border-radius: 10px;
+    overflow: hidden;
+    border: 1px solid #dee2e6;
+    box-shadow: 0px 4px 8px rgb(0, 0, 0);
+
+}
+
+.customer-table thead {
+    background-color: #4CAF50; /* Table header color */
+    color: #ffffff;
+}
+
+.customer-table th, .customer-table td {
+    vertical-align: middle;
+    text-align: center;
+    padding: 16px; /* Increased padding for bigger cells */
+    font-size: 16px; /* Larger font size for better readability */
+    font-family: 'Arial', sans-serif; /* Clean font for data */
+    border: 1px solid #dee2e6; /* Light border for better separation */
+}
+
+
+
+
+.customer-table tbody tr:hover {
+    background-color: #4CAF50; /* Hover background color */
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+
+.order-section {
+    background-color: #f9f9f9;
+    padding: 20px;
+}
+
+.order-card {
+    width: 1000px;
+    background: #fff;
+    margin: auto;
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(2, 255, 91, 0.575);
+}
+
+.order-items-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+.order-items-table th, .order-items-table td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+.order-table-section h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: bold;
+    color: #4CAF50; /* Adjust to match your theme */
+}
+
+.order-table {
+    border-radius: 10px;
+    overflow: hidden;
+    border: 1px solid #dee2e6;
+
+  
+}
+
+.order-table thead {
+    background-color: #4CAF50; /* Table header color */
+    color: #ffffff;
+}
+
+.order-table th, .order-table td {
+    vertical-align: middle;
+    text-align: center;
+    padding: 16px; /* Increased padding for bigger cells */
+    font-size: 16px; /* Larger font size for better readability */
+    font-family: 'Arial', sans-serif; /* Clean font for data */
+    border: 1px solid #dee2e6; /* Light border for better separation */
+}
+
+
+
+
+
+
+/* Make the tables scrollable on smaller screens */
+.table-responsive {
+    overflow-x: none;
+    margin-top: 20px;
+    max-height: 600px; /* Set your desired height */
+    overflow-y: auto; /* Enable vertical scrolling */
+    border: 1px solid #ddd;
+}
+#orders-container{
+    overflow-y: auto;
+    max-height: 600px;
+    width:1100px;
+    margin: auto;
+}
+.subscription-cards-container{
+    overflow-y: auto;
+    width:1350px;
+    max-height: 600px;
+    margin: auto;
+
+}
+.remove-items-container{
+    background-color: #60cd12;
+    backdrop-filter: blur(5px) brightness(0.9); /* Apply backdrop filter effects */
+}
+
+@media (max-width: 768px) {
+    .order-table th, .order-table td {
+        font-size: 14px;
+        padding: 8px;
+    }
+}
+p > strong {
+    /* Add your styles here */
+    font-weight: bold;  /* Example: bold text */
+    color: #4CAF50;      /* Example: dark gray text */
+
+}

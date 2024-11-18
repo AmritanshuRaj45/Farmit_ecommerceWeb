@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register - FarmIt</title>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="js/main.js"></script>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            // Check if the flag is set in sessionStorage
+            const showRoleDropdown = sessionStorage.getItem('showRoleDropdown');
+            const roleDrop = document.getElementById('role-drop');
+
+
+            if (showRoleDropdown === 'true') {
+                // Find the dropdown and remove the 'hide' class if the flag is set
+                const roleDrop = document.getElementById('role-drop');
+                if (roleDrop) {
+
+                    roleDrop.classList.remove('hide');
+                }
+                
+                // Optionally clear the flag from sessionStorage if you only want this to happen once
+                sessionStorage.removeItem('showRoleDropdown');
+            }
+        });
+    </script>
+    
+    <link rel="stylesheet" href="css/login.css">
+</head>
+<body>
+  <!-- Banner Section -->
+  <div class="banner" style="display: flex;">
+    <div style="margin-left: 200px;"><img decoding="async" src="./images/logo.png" alt="" height="70px" ></div>
+    <div class="banner-content">
+        
+        <h1>Welcome to FarmIt</h1>
+    </div>
+</div>
+    <!-- Registration Form Section -->
+    <div class="registration-container">
+        <div class="registration-card">
+            <h2>Create an Account</h2>
+            <form id="registration-form" action="/api/auth/register" method="POST">
+                <input type="text" name="name" placeholder="Full Name" required> <!-- New Name field -->
+                <input type="text" name="username" placeholder="Username" required>
+                <input type="password" name="password" placeholder="Password" required>
+                <input type="email" name="email" placeholder="Email" required>
+                <input type="tel" name="phone" placeholder="Phone Number" required>
+                <input type="text" name="city" placeholder="City" required>
+
+                <select  id="role-drop" class="hide" name="role" required >
+                    <option value="customer">Customer</option>
+                    <option value="admin">Admin</option>
+                </select>
+            
+                <button type="submit" id="registerButton">Register</button>
+                <p>Already have an account? <a href="index.html">Login here</a></p>
+            </form>
+        </div>
+
+    </div>
+</body>
+</html>

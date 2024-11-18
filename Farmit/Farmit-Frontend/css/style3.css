@@ -1,0 +1,142 @@
+/* Container to wrap all cards */
+.shop {
+  margin: auto;
+    display: flex;
+    max-height: 900px;
+    flex-wrap: wrap;
+    gap: 20px; /* Space between each card */
+    justify-content: center; /* Center the cards */
+    padding: 20px;
+    width: 1200px;
+    overflow-y: auto;
+  }
+  
+  /* Card styling */
+  .item {
+    width: 250px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0px 4px 12px rgba(0, 255, 30, 0.669);
+    overflow: hidden;
+    transition: transform 0.2s ease;
+    text-align: center;
+    margin: 10px; /* Uniform margin around each card */
+  }
+  
+  /* Hover effect */
+  .item:hover {
+    transform: translateY(-5px);
+    box-shadow: 4px 8px 12px rgba(0, 255, 30, 0.758);
+  }
+  
+  /* Image styling */
+  .item img {
+    width: 100%;
+    height: 185px;
+    border-bottom: 1px solid #f0f0f0;
+  }
+  
+  /* Details styling */
+  .details {
+    padding: 15px;
+  }
+  
+  /* Title styling */
+  .details h4 {
+    font-size: 40px;
+    color: #333;
+    margin: 10px 0;
+    letter-spacing: 0.5px;
+  }
+  
+  /* Description styling */
+  .details p {
+    font-size: 20px;
+    color: #555;
+    margin: 8px 0;
+    line-height: 1.4;
+  }
+  
+  /* Price and quantity container */
+  .price-quantity {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 2px;
+    white-space: nowrap;
+  }
+  
+  /* Price styling */
+  .price-quantity h2 {
+    font-size: 22px;
+    color: #28a745;
+    font-weight: bold;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  /* Buttons container styling */
+  .buttons {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  /* Quantity number styling */
+  .quantity {
+    font-size: 18px;
+    font-weight: 600;
+    color: #333;
+   margin-top: 8px;
+  }
+  
+  /* Increment/decrement button styling */
+  .buttons i {
+    margin-top: 8px;
+    font-size: 24px;
+    cursor: pointer;
+    color: #007bff;
+    padding: 8px;
+    transition: color 0.3s;
+  }
+  
+  .buttons i:hover {
+    color: #0056b3;
+  }
+  
+  .navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #939393;
+    color: rgb(199, 0, 0);
+    padding: 25px 60px;
+    margin-bottom: 30px;
+    height: 100px;
+  }
+  
+  .cart {
+    position: relative;
+    width: 40px;
+    background-color: #fff;
+    color: #212529;
+    font-size: 30px;
+    padding: 5px;
+    border-radius: 4px;
+    margin-bottom: 20px;
+  }
+  
+  .cartAmount {
+    position: absolute;
+    width: 20px;
+    top: -15px;
+    right: -10px;
+    font-size: 16px;
+    background-color: red;
+    color: white;
+    padding: 3px;
+    border-radius: 30px;
+    
+    text-align: center;
+  }
+  

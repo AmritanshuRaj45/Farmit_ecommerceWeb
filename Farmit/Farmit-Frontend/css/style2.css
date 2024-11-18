@@ -1,0 +1,272 @@
+/**
+* ! Changing default styles of the browser
+**/
+
+/* Custom styling for SweetAlert title and text */
+
+/* Custom styles for the SweetAlert modal box */
+
+  i {
+    cursor: pointer;
+  }
+  
+  a {
+    text-decoration: none;
+    color: rgb(46, 232, 9);
+  }
+  
+  /**
+  * ! Navbar STyles are here
+  **/
+  
+  .navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #939393;
+    color: rgb(199, 0, 0);
+    padding: 25px 60px;
+    margin-bottom: 30px;
+    height: 100px;
+  }
+  
+  .cart {
+    position: relative;
+    width: 40px;
+    background-color: #fff;
+    color: #212529;
+    font-size: 30px;
+    padding: 5px;
+    border-radius: 4px;
+    margin-bottom: 20px;
+  }
+  
+  .cartAmount {
+    position: absolute;
+    width: 20px;
+    top: -15px;
+    right: -10px;
+    font-size: 16px;
+    background-color: red;
+    color: white;
+    padding: 3px;
+    border-radius: 30px;
+    
+    text-align: center;
+  }
+  
+  /**
+  * ! Shop items styles are here
+  **/
+  
+  .shop {
+    display: grid;
+    grid-template-columns: repeat(4, 223px);
+    gap: 30px;
+    justify-content: center;
+  }
+  
+  @media (max-width: 1000px) {
+    .shop {
+      grid-template-columns: repeat(2, 223px);
+    }
+  }
+  
+  @media (max-width: 500px) {
+    .shop {
+      grid-template-columns: repeat(1, 223px);
+    }
+  }
+  
+  .item {
+    border: 2px solid #212529;
+    border-radius: 4px;
+  }
+  
+  .details {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    gap: 10px;
+    
+  }
+  .quantity{
+    font-size: 20px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+  }
+  
+  .price-quantity {
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .buttons {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    margin-left: 35px;
+    margin-top: -10px;
+  }
+  
+  .bi-dash-lg {
+    color: red;
+    font-size: 20px;
+    
+  }
+  
+  .bi-plus-lg {
+    font-size: 20px;
+    color: green;
+  }
+  
+  /**
+  * ! style rules for label and some buttons
+  **/
+  
+  .text-center {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .HomeBtn,
+  .checkout,
+  .removeAll {
+    background-color: #212529;
+    color: white;
+    font-size: large;
+    border: none;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 3px;
+    cursor: pointer;
+    margin-top: 10px;
+    margin-right: 10px;
+  }
+  
+  .checkout {
+    background-color: green;
+    font-size: large;
+  }
+  .removeAll {
+    background-color: red;
+    font-size: large;
+    
+
+  }
+  .bi-x-lg {
+    color: red;
+    font-weight: bold;
+  }
+  
+  /**
+  * ! style rules for shopping-cart
+  **/
+  
+  .shopping-cart {
+    display: grid;
+
+    justify-content: center;
+    gap: 15px;
+  }
+  
+  /**
+  * ! style rules for cart-item
+  **/
+  
+  .cart-item {
+    display: flex;
+    height: 200px;
+    width: 521px; /* Increase the width to your desired size */
+    margin-bottom: -90px;
+    border: 1px solid #ddd; /* Optional: Add border */
+    padding: 15px; /* Optional: Add padding */
+    border-radius: 10px; /* Optional: Add rounded corners */
+    background-color: #f9f9f9; /* Optional: Add background color */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.589); /* Optional: Add shadow */
+    background-color: rgba(255, 255, 255, 0.603);
+}
+
+  
+  .title-price {
+
+    align-items: center;
+    gap: 10px;
+    white-space: nowrap; 
+  }
+  .item-name{
+    font-weight: bold;
+    font-size: 25px;
+    margin-top: -20px;
+    margin-left: 20px;
+  }
+  
+  .cart-item-price {
+    margin-left: 20px;
+    font-weight: normal;
+    font-size: 20px;
+    margin-top: 0px;
+    width:fit-content;
+    padding: 5px;
+    color: rgb(0, 0, 0);
+    border-radius: 4px;
+  
+  }
+  
+  .cart-item-price2 {
+    margin-left: 20px;
+    font-weight: normal;
+    font-size: 20px;
+    background-color: #212529;
+    width:fit-content;
+    padding: 5px;
+    color: white;
+    border-radius: 4px;
+    margin-top: 0px;
+  
+  }
+ .x{
+  font-size: 30px;
+  font-weight: bolder;
+  position: relative; 
+  left: 450px; /* Move the element 450px to the right */
+  top: -60px; /* Move the element 30px upwards */
+  z-index: 1;
+  
+ }
+
+.rem{
+  font-size: 15px;
+  font-weight: normal;
+  position: relative; 
+  left: 435px; /* Move the element 450px to the right */
+  top: -85px; /* Move the element 30px upwards */
+  color: red;
+
+
+}
+.card {
+  padding: 50px;
+  margin: auto;
+   width: 700px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.6);
+}
+#label{
+  margin-bottom: 40px;
+}
+button:hover{
+
+}

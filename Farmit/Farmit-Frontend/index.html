@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - FarmIt</title>
+    <script type="text/javascript">
+        window.addEventListener("pageshow",function (event){
+            if(event.persisted){
+                window.location.reload();
+            }
+        });
+        window.onload = function() {
+            const customerId = sessionStorage.getItem('customerId');
+            if (localStorage.getItem('loginStatus_' + customerId) === 'loggedIn') {
+                if (sessionStorage.getItem('isCustomerLoggedIn_' + customerId) === 'true') {
+                    window.location.replace("home.html");
+                } else if (sessionStorage.getItem('isAdminLoggedIn_' + customerId) === 'true') {
+                    window.location.replace("admin-dashboard.html");
+                }
+            }
+        };
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+        
+    <script src="js/login.js" defer></script> <!-- Use defer to ensure the script loads after the DOM -->
+
+    <link rel="stylesheet" href="css/login.css">
+</head>
+<body>
+    <!-- Banner Section -->
+    <div class="banner" style="display: flex;">
+        <div style="margin-left: 200px;"><img decoding="async" src="./images/logo.png" alt="" height="70px" ></div>
+        <div class="banner-content">
+            
+            <h1>Welcome to FarmIt</h1>
+        </div>
+    </div>
+    <div class="login-container">
+        <div class="login-card">
+            <h2>Login to FarmIt</h2>
+            <form id="loginForm">
+                <input type="text" id="username" name="username" placeholder="Username" required>
+                <input type="password" id="password" name="password" placeholder="Password" required>
+                <select name="role" id="role" required>
+                    <option value="customer">Customer</option>
+                    <option value="admin">Admin</option>
+                </select>
+                <button type="submit">Login</button>
+            </form>
+            <div id="errorMessage"></div> <!-- Error message display -->
+            <p>Don't have an account? <a href="register.html">Register here</a></p>
+        </div>
+    </div>
+      
+</body>
+</html>

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register - FarmIt</title>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="js/main.js"></script>
+    <script>
+
+        // DOM event: Wait until the DOM content is fully loaded to trigger SweetAlert
+        document.addEventListener('DOMContentLoaded', function() {
+            let timerInterval;
+            const timerInSeconds = 3;  // Set the time in seconds
+            const timerInMilliseconds = timerInSeconds * 1000;  // Convert to milliseconds
+            const customerId = sessionStorage.getItem('adminId');
+            if (sessionStorage.getItem('isAdminLoggedIn_' + customerId) === 'true') {
+        Swal.fire({
+  title: "  Successfully registered",
+
+  html: `Now directing you back to your Dashboard in <b>${timerInSeconds}</b> seconds.`,
+  timer: timerInMilliseconds,  // Use the milliseconds value
+  timerProgressBar: true,
+  didOpen: () => {
+    Swal.showLoading();
+    const timer = Swal.getPopup().querySelector("b");
+    let remainingTime = timerInSeconds;
+
+    // Update the timer every second
+    timerInterval = setInterval(() => {
+      remainingTime--;
+      timer.textContent = `${remainingTime}`;
+
+      // Once the timer reaches zero, clear the interval
+      if (remainingTime <= 0) {
+        clearInterval(timerInterval);
+      }
+    }, 1000);  // Update every second
+  },
+  willClose: () => {
+    clearInterval(timerInterval);
+  }
+}).then(() => {
+                // Redirect to another page after the timer finishes
+                window.location.href = '/admin-dashboard.html';  // The page to redirect to
+            });
+            }
+            else{
+              Swal.fire({
+  title: "Successfully registered",
+
+  html: `Now directing you to login page in <b>${timerInSeconds}</b> seconds.`,
+  timer: timerInMilliseconds,  // Use the milliseconds value
+  timerProgressBar: true,
+  didOpen: () => {
+    Swal.showLoading();
+    const timer = Swal.getPopup().querySelector("b");
+    let remainingTime = timerInSeconds;
+
+    // Update the timer every second
+    timerInterval = setInterval(() => {
+      remainingTime--;
+      timer.textContent = `${remainingTime}`;
+
+      // Once the timer reaches zero, clear the interval
+      if (remainingTime <= 0) {
+        clearInterval(timerInterval);
+      }
+    }, 1000);  // Update every second
+  },
+  willClose: () => {
+    clearInterval(timerInterval);
+  }
+}).then(() => {
+                // Redirect to another page after the timer finishes
+                window.location.href = '/index.html';  // The page to redirect to
+            });
+
+            }
+
+        });
+    </script>
+    <link rel="stylesheet" href="css/login.css">
+</head>
+<body>
+  <!-- Banner Section -->
+  <div class="banner" style="display: flex;">
+    <div style="margin-left: 200px;"><img decoding="async" src="./images/logo.png" alt="" height="70px" ></div>
+    <div class="banner-content">
+        
+        <h1>Welcome to FarmIt</h1>
+    </div>
+</div>
+<h1>Success! Your action was completed.</h1>
+<p>You will be redirected to another page shortly.</p>
+</body>
+</html>
